@@ -1,0 +1,112 @@
+@import 'reset';
+
+$main-color: #7159c1;
+
+%flex-standard {
+  display: flex;
+  flex-direction: column;
+}
+
+%button-style-standard {
+    width: 90px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    outline: none;
+}
+
+%form-style {
+  outline: none;
+  border: none;
+  width: 280px;
+  height: 40px;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: $main-color;
+  width: 100%;
+  height: 60px;
+  
+  svg {
+    color: #fff;
+    margin: 0 20px 0 0px;
+    cursor: pointer;
+  }
+
+  h1 {
+    display: flex;
+    align-self: center;
+
+    margin: 5px 0 0 5px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+.container {
+  display: flex;
+  
+}
+
+.formArea {
+  @extend %flex-standard;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 100vh - 60;
+}
+
+.formBox {
+  @extend %flex-standard;
+  align-items: center;
+  justify-content: center;
+
+  background: #e6e1e1;
+  width: 500px;
+  height: 350px;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+
+  input {
+    @extend %form-style;
+    
+  }
+
+  button {
+    @extend %button-style-standard;
+    background: $main-color;
+    
+    &:hover {
+      background: #533c9e;
+    }
+  }
+}
+
+.listArea {
+  @extend %flex-standard;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $main-color;
+  li {
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  svg {
+    color: #ff1e00;
+    cursor: pointer;
+  }
+}
