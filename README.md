@@ -12,7 +12,7 @@ Para mais detalhes sobre o desafio, [clique aqui](https://github.com/Rocketseat/
 - ReactJS
 - Sass
 
-![Desafio Conceitos ReactJS](https://user-images.githubusercontent.com/60238162/85185691-6c832400-b26b-11ea-81d8-0e59e7ab4723.JPG)
+![localhost_3000_](https://user-images.githubusercontent.com/60238162/86492454-939a2500-bd44-11ea-9f78-046189b239c2.png)
 
 ### Como utilizar a aplicação? ###
 
